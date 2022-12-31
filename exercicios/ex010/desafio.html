@@ -81,6 +81,7 @@
 <body>
     <h1>Teste de Nacionalidade</h1>
     <h3 id="teste">Qual o seu país?</h3>
+    
     <input type="text" name="nation" id="txtnation" required autocomplete="off"></label>
 
     <input type="button" id="button" value="verificar">
@@ -90,20 +91,17 @@
 
     
     <script>
-        
         var button = document.querySelector('input#button')
-        
         button.addEventListener('click', verificar)
 
         function verificar(){
-            var res = document.querySelector('div#res')
-            var teste = document.querySelector('h3#teste')
-            var nation = document.querySelector('txtnation')
             
-           alert(nation)
+            var nation = document.getElementById('txtnation')
+            var res = document.querySelector('div#res')
 
-            teste.innerHTML = nation
-            if (nation == ''){
+            nation = (nation.value).toUpperCase()
+
+            if (nation != 'BRASIL'){
                 res.innerHTML = 'Você é Estrangueiro'
             }else{
                 res.innerHTML = 'Você é Brasileiro!'
