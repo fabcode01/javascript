@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        h1{
+            color: aliceblue;
+            text-align: center;
+            background-color: rgb(112, 31, 189);
+            height: 1.5em;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        label{
+            display: block;
+            margin: auto;
+            
+        }
+        
+        input#txtnation{
+            display: block;
+            margin: auto;
+            height: 1em;
+            width: 200px;
+            padding: 10px;
+            font-size: 1.4em;
+            text-align: center;
+        }
+
+        input#button{
+            border: 0 ;
+            text-transform: uppercase;
+            display: block;
+            margin: auto;
+            border-radius: 10px;
+            margin-top: 10px;
+            width: 200px;
+            padding: 10px;
+            background-color: rgb(112, 31, 189);
+            color: aliceblue;
+            transition: all 0.3s;
+
+        }
+        input#button:hover{
+            background-color: rgb(67, 17, 114);
+        }
+
+        h3{
+            text-align: center;
+            
+        }
+
+        div#res{
+            
+            background-color: rgb(112, 31, 189);
+            width: 70%;
+            margin: auto;
+            text-align: center;
+            padding: 10px;
+            color: aliceblue;
+            
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            border-radius: 5px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Teste de Nacionalidade</h1>
+    <h3 id="teste">Qual o seu país?</h3>
+    <input type="text" name="nation" id="txtnation" required autocomplete="off"></label>
+
+    <input type="button" id="button" value="verificar">
+
+    <h3>Você é:</h3>
+    <div id="res"> </div>
+
+    
+    <script>
+        
+        var button = document.querySelector('input#button')
+        
+        button.addEventListener('click', verificar)
+
+        function verificar(){
+            var res = document.querySelector('div#res')
+            var teste = document.querySelector('h3#teste')
+            var nation = document.querySelector('txtnation')
+            
+           alert(nation)
+
+            teste.innerHTML = nation
+            if (nation == ''){
+                res.innerHTML = 'Você é Estrangueiro'
+            }else{
+                res.innerHTML = 'Você é Brasileiro!'
+            }
+
+        }
+        
+
+
+
+    </script>
+
+</body>
+</html>

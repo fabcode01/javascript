@@ -10,11 +10,13 @@
     <h1>Somando Valores</h1>
     <input type="number" name="txtn1" id="txtn1">
     <input type="number" name="txtn2" id="txtn2">
-    <input type="submit" value="calcular" onclick="somar()">
+    <input type="submit" value="calcular" id="button">
 
     <p id="res">resultado</p>
 
     <script>
+        var botao = document.querySelector('input#button')
+        botao.addEventListener('click', somar)
         function somar(){
             var tn1 = document.getElementById('txtn1')
             var tn2 = document.getElementById('txtn2')
@@ -29,7 +31,7 @@
             res.innerText = s
 
 
-            
+
             
 
             

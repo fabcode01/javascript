@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    <label for="txtvel">Velocidade:<input type="number" name="vel" id="txtvel"></label>
+    <input type="button" value="verificar" id="button">
+    <div id="vel"></div>
+    
+    
+
+    <script>
+        var botao = document.querySelector('input#button')
+        botao.addEventListener('click', clicou)
+        
+        
+        function clicou(){
+        
+        
+        
+        var res = document.querySelector('div#vel')
+
+        var velocidade = document.querySelector('input#txtvel')
+
+        velocidade = Number(velocidade.value)
+
+        
+        res.innerHTML = `<p>Sua velocidade atual é de <strong>${velocidade}</strong> Km/h</p>`
+
+        if (velocidade > 50){
+            res.innerHTML += 'Velocidade excedida, você foi <strong>multado!</strong>'
+            
+        }
+        
+        res.innerHTML += '<p> Dirija sempre com <strong>cinto de segurança</strong>!'
+        
+        
+        
+        
+        }
+
+       
+
+
+    </script>
+</body>
+</html>
