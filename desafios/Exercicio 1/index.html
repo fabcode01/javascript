@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do dia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body" >
+     <h1>Hora do Dia</h1>
+     <main>
+        <h4>Agora são</h4>
+        <p id="hour">.</p>
+        <div id="img"></div>
+
+        <p><a href="https://github.com/fabcode01" target="_blank" rel="exit">@fabcode01</a></p>
+
+
+
+     </main>
+
+     <script>
+        var date = new Date()
+        const hora = date.getHours()
+        const min = date.getMinutes()
+        
+        var mainBack = document.getElementById('img')
+        var pHour = document.querySelector('p#hour')
+
+        pHour.innerHTML = `${hora}h${min}`
+
+        if (hora >= 5 && hora < 12){
+            mainBack.style.backgroundImage = 'url(img/dia.jpg)'
+        }else if (hora => 12 && hora < 18){
+            mainBack.style.backgroundImage = 'url(img/tarde.jpg)'
+            body.style.backgroundColor = '#f59241'
+
+            
+        }else if (hora >= 18 && hora < 23){
+            mainBack.style.backgroundImage = 'url(img/noite.jpg)'
+            body.style.backgroundColor = '#1f1f1f'
+        }
+
+
+     </script>
+</body>
+</html>

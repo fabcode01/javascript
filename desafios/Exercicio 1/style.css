@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+body{
+    background-color: rgb(107, 107, 107);
+}
+
+main{
+    background-color: rgb(255, 252, 247);
+    height: 500px;
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+h1{
+    text-align: center;
+    color: aliceblue;
+}
+
+h4, h1{
+    text-align: center;
+    
+    padding-top: 20px;
+    
+}
+
+div#img{
+    width: 300px;
+    height: 300px;
+    background-image: url(img/branco.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+
+p{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+p > a{
+    
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: rgb(85, 85, 85);
+}
+    
+
+
+
+body{
+    background-color: #1f1f1f;
+}
