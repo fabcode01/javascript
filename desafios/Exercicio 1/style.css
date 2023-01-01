@@ -35,7 +35,7 @@ h4, h1{
 div#img{
     width: 300px;
     height: 300px;
-    background-image: url(img/branco.png);
+    background-image: url(img/night.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: block;
@@ -44,6 +44,7 @@ div#img{
 }
 
 p{
+
     text-align: center;
     margin-top: 5px;
     margin-bottom: 20px;
@@ -54,6 +55,7 @@ p > a{
     text-align: center;
     text-decoration: none;
     color: black;
+    
 }
 
 a:hover{
@@ -63,6 +65,8 @@ a:hover{
 
 
 
-body{
-    background-color: #1f1f1f;
+
+
+h1{
+    color: #ffffff;
 }
