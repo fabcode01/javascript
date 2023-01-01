@@ -32,9 +32,6 @@
             mainBack.style.background = 'url(img/night.jpg)'
             mainBack.style.backgroundSize = 'cover'
             body.style.backgroundColor = '#272727'
-            main.style.backgroundColor = '#000000'
-            text.style.color = 'aliceblue'
-            pHour.style.color = 'aliceblue'
-            link.style.color = 'aliceblue'
+            
 
         }}
