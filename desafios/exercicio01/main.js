@@ -1,6 +1,10 @@
-var date = new Date()
+     setInterval(getHour);
+     
+     function getHour(){
+        
+        const date = new Date()
         var hora = date.getHours()
-        var min = date.getMinutes()
+        
         
         var h1 = document.getElementById('h1')
         var main = document.getElementById('main')
@@ -9,8 +13,9 @@ var date = new Date()
         var text = document.getElementById('text')
         var link = document.querySelector('p > a')
 
-        pHour.innerHTML = `${hora}h${min}`
+        pHour.innerHTML = date.toLocaleTimeString()
 
+        
         if (hora >= 5 && hora < 12){
             mainBack.style.backgroundImage = 'url(img/dia.jpg)'
             body.style.backgroundColor = '#95e2f5'
@@ -32,4 +37,4 @@ var date = new Date()
             pHour.style.color = 'aliceblue'
             link.style.color = 'aliceblue'
 
-        }
+        }}
