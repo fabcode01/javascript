@@ -44,13 +44,14 @@ div#img{
 }
 
 p{
-
+    
     text-align: center;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 
 p > a{
+    
     
     text-align: center;
     text-decoration: none;
