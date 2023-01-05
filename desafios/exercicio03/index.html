@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Exercicios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Contador</h1>
+    <section>
+        <form action="">
+            <label for="init1">N de inicio:<input type="number" name="init1" id="init1"></label>
+            
+            
+            <label for="fim">Fim: <input type="number" name="fim" id="fim" v></label>
+            
+            <label for="passo">De: <input type="number" name="passo" id="passo" v></label>
+            
+            <input type="button" value="Contar" onclick="counter()">
+            
+            <input type="reset" value="limpar">
+        </form>
+
+        <div id='res'></div>
+
+
+    </section>
+
+    <footer>&#169;Fabricio Silva</footer>
+
+    <script>
+        
+        function counter(){
+            let clean = document.querySelector('input[value=limpar]')
+            
+            var init = document.querySelector('input#init1')
+            
+            var end = document.querySelector('input#fim')
+            var Numberpasso = document.querySelector('input#passo')
+            var res = document.querySelector('div#res')
+            
+            clean.addEventListener('click', clear)
+            function clear(){
+                res.innerHTML = ''
+            }
+            
+            
+            if(init.value.length == 0 || fim.value.length == 0 || passo.value.length == 0){
+                alert('Erro, Faltam dados')
+                }else{
+                res.innerHTML = ''
+                
+                
+                init = Number(init.value)
+                end = Number(end.value)
+                passo = Number(passo.value)
+
+
+            if (init = end){[
+                alert('Erro. Números iguais')
+                
+            ]}    
+            if (init < end){
+                while(init <= end){
+                    res.innerHTML += (` ${init}`)
+                    init += passo}
+                }else{
+                    while(init >= end){
+                    res.innerHTML += (` ${init}`)
+                    init -= passo
+                }}   
+                
+                
+        }
+            
+
+            
+
+
+            
+        
+        
+        }
+
+        
+
+
+    </script>
+</body>
+</html>
