@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(117, 117, 247);
+}
+
+button{
+    display: block
+}
+
+h1{
+    text-align: center;
+    color: aliceblue;
+}
+
+select{
+    padding: 10px;
+    margin-top: 10px;
+}
+
+section{
+    background-color: antiquewhite;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+footer > p{
+    color: aliceblue;
+    text-align: center;
+}
