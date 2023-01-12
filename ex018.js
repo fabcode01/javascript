@@ -10,3 +10,7 @@ let amigo = {nome:'jose',
 
 amigo.engordar(0)
 console.log(amigo.peso)
+
+/*
+
+//ola*/
