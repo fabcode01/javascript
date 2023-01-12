@@ -36,7 +36,7 @@ function adicionar(){
         
 
     }else {
-        alert('Valor em branco ou já adicionado!')
+        alert('Valor em branco/invalido ou já adicionado!')
     }
 
     num.value = ''
@@ -82,5 +82,6 @@ function adicionar(){
         valores.length = 0
         lista.length = 0
         res.innerHTML = ''
+        
     }
     
