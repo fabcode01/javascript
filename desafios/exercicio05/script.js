@@ -75,6 +75,10 @@ function adicionar(){
       
 
     function limpar(){
+        if (valores.length == 0 && lista.length == 0 && res.innerHTML == ''){
+            alert('Já está tudo limpo!')
+        } 
+
         valores.length = 0
         lista.length = 0
         res.innerHTML = ''
