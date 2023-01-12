@@ -39,3 +39,39 @@ a:hover{
     background-color: rgb(78, 165, 241);
 }
 
+select{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div#res{
+    padding: 5px;
+    border-radius: 15px;
+    background-color: white;
+    margin-top: 17px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+strong{
+    color: rgb(255, 4, 4);
+}
+
+input[value='finalizar'], input[value='limpar']{
+    border: none;
+    background-color: rgb(168, 33, 33);
+    color: aliceblue;
+    padding: 5px;
+    cursor: pointer;
+
+}
+
+input[value='finalizar']:hover, input[value='limpar']:hover{
+
+    background-color: rgb(65, 8, 8);
+    
+}
+
+
+
